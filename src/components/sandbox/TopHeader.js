@@ -16,18 +16,19 @@ export default function TopHeader(){
      const navigate = useNavigate()
 
     function jsondeliver(){
-        if(localStorage === null){
-            return JSON.parse(localStorage.getItem("token"))
-        }else{
+        if(localStorage === null || JSON.parse(localStorage.getItem("token") === null)) {
+
             navigate("/login")
         }
+
     }
 
     function logout(){
         localStorage.removeItem("token")
           navigate("/login")
     }
-    const username = jsondeliver.username
+    jsondeliver()
+    const username = JSON.parse(localStorage.getItem("token")).username
     return(
 
         <Header

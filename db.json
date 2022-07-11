@@ -1,4 +1,32 @@
 {
+  "categories": [
+    {
+      "id" : 1,
+      "name" : "electric",
+      "collection": "electric"
+    },{
+      "id": 2,
+      "name" : "fruit",
+      "collection": "fruit"
+    },{
+      "id" : 3,
+      "name" : "toy",
+      "collection": "toy"
+    },{
+      "id" : 4,
+      "name" : "cloth",
+      "collection": "cloth"
+    },{
+      "id" : 5,
+      "name" : "other",
+      "collection": "other"
+    }
+  ],
+  "products":[
+    {"id": 1,
+      "name": "iphone"
+    }
+  ],
   "posts": [
     {
       "id": 1,
