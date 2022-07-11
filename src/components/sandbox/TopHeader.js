@@ -45,7 +45,7 @@ export default function TopHeader(){
                 {float:"right"}
             }>
 
-                <span>welcome {username }</span>
+                <span >welcome {username }</span>
                 <Button onClick={logout}>log out</Button>
 
             </div>
