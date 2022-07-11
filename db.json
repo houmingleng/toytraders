@@ -6,6 +6,14 @@
       "author": "typicode"
     }
   ],
+  "users": [
+    {"id": 1,
+      "username": "admin",
+      "password" : "admin",
+      "roleState" : true
+    }
+  ]
+  ,
   "comments": [
     {
       "id": 1,
@@ -15,5 +23,72 @@
   ],
   "profile": {
     "name": "typicode"
+  },
+  "page": [
+    {
+    "id": 0,
+    "key": "sub0",
+    "permission": 1,
+    "label":"Home",
+    "type": ""
+  },
+    {
+    "id": 1,
+    "key": "sub1",
+    "permission": 1,
+    "label":"Profile",
+    "type": ""
+  },
+    {
+    "id": 2,
+    "key": "sub2",
+      "permission": 1,
+    "label":"product display",
+    "type": ""
+  },
+    {
+      "id": 3,
+      "key": "sub3",
+      "permission": 1,
+      "label":"product update",
+      "type": ""
+    }
+  ],
+  "children":[
+    {
+      "id": 4,
+      "pageId": 0,
+      "permission": 1,
+      "label": "Home Page",
+      "key": "home"
+    },
+    {
+      "id": 5,
+      "pageId": 1,
+      "permission": 1,
+      "label": "show Profile",
+      "key": "profile"
+    },
+    {
+      "id": 6,
+      "pageId": 2,
+      "permission": 1,
+      "label": "product display",
+      "key": "productdisplay"
+    },
+    {
+      "id": 7,
+      "pageId": 3,
+      "permission": 1,
+      "label": "product update one",
+      "key": "productupdate"
+    },
+    {
+      "id": 8,
+      "pageId": 3,
+      "permission": 0,
+      "label": "product delete",
+      "key": "productdelete"
+    }
+  ]
   }
-}

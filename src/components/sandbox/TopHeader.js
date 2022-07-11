@@ -1,19 +1,33 @@
 import React, { useState } from 'react';
-import { Layout} from 'antd';
+import {Button, Layout} from 'antd';
 import {
     MenuFoldOutlined,
     MenuUnfoldOutlined,
     UserOutlined
 } from '@ant-design/icons';
+import {useNavigate} from "react-router-dom";
 const {  Header, Avatar} = Layout;
+
+
 
 
 export default function TopHeader(){
     const [collapsed,setCollapsed] = useState(false);
+     const navigate = useNavigate()
 
+    function jsondeliver(){
+        if(localStorage === null){
+            return JSON.parse(localStorage.getItem("token"))
+        }else{
+            navigate("/login")
+        }
+    }
 
-
-
+    function logout(){
+        localStorage.removeItem("token")
+          navigate("/login")
+    }
+    const username = jsondeliver.username
     return(
 
         <Header
@@ -31,8 +45,8 @@ export default function TopHeader(){
                 {float:"right"}
             }>
 
-                <span>welcome</span>
-    
+                <span>welcome {username }</span>
+                <Button onClick={logout}>log out</Button>
 
             </div>
         </Header>
