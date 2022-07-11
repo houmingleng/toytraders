@@ -60,8 +60,6 @@ export default function ProductUpdate() {
         })
     },[])
 
-
-
     return(
         <div>
             <Steps current={current}>
