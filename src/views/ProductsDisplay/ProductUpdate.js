@@ -47,6 +47,7 @@ export default function ProductUpdate() {
         }
     }
 
+
     const handleprevious = ()=>{setCurrent(current-1) }
 
     useEffect(()=>{
